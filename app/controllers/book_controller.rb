@@ -59,4 +59,9 @@ class BookController < ApplicationController
       redirect_to :action => 'list'
    end
    
+   #Return all the books based on a given subject.
+   def show_subjects
+      @subject = Subject.find(params[:id])
+   end
+   
 end
