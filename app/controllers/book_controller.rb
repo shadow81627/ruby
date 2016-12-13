@@ -8,6 +8,8 @@ class BookController < ApplicationController
    end
    
    def new
+      @book = Book.new
+      @subjects = Subject.all
    end
    
    def create
